@@ -159,10 +159,14 @@ class DPCode(StrEnum):
     CUR_CURRENT = "cur_current"  # Actual current
     CUR_POWER = "cur_power"  # Actual power
     CUR_VOLTAGE = "cur_voltage"  # Actual voltage
+    CURRENT_A = "current_a"
+    CURRENT_B = "current_b"
     DECIBEL_SENSITIVITY = "decibel_sensitivity"
     DECIBEL_SWITCH = "decibel_switch"
     DEHUMIDITY_SET_ENUM = "dehumidify_set_enum"
     DEHUMIDITY_SET_VALUE = "dehumidify_set_value"
+    DIRECTION_A = "direction_a" # current flow direction (FORWARD or REVERSE)
+    DIRECTION_B = "direction_b" # current flow direction (FORWARD or REVERSE)
     DISINFECTION = "disinfection"
     DO_NOT_DISTURB = "do_not_disturb"
     DOORCONTACT_STATE = "doorcontact_state"  # Status of door window sensor
@@ -172,6 +176,10 @@ class DPCode(StrEnum):
     ECO2 = "eco2"
     EDGE_BRUSH = "edge_brush"
     ELECTRICITY_LEFT = "electricity_left"
+    ENERGY_FORWARD_A = "energy_forword_a"
+    ENERGY_FORWARD_B = "energy_forword_b"
+    ENERGY_REVERSE_A = "energy_reverse_a"
+    ENERGY_REVERSE_B = "energy_reserse_b"
     FAN_BEEP = "fan_beep"  # Sound
     FAN_COOL = "fan_cool"  # Cool wind
     FAN_DIRECTION = "fan_direction"  # Fan direction
@@ -186,12 +194,13 @@ class DPCode(StrEnum):
     FAULT = "fault"
     FEED_REPORT = "feed_report"
     FEED_STATE = "feed_state"
-    FILTER = "filter"
+    FILTER = "filter" # AC frequency in Hz
     FILTER_LIFE = "filter"
     FILTER_RESET = "filter_reset"  # Filter (cartridge) reset
     FLOODLIGHT_LIGHTNESS = "floodlight_lightness"
     FLOODLIGHT_SWITCH = "floodlight_switch"
     FORWARD_ENERGY_TOTAL = "forward_energy_total"
+    FREQUENCY = "freq"
     GAS_SENSOR_STATE = "gas_sensor_state"
     GAS_SENSOR_STATUS = "gas_sensor_status"
     GAS_SENSOR_VALUE = "gas_sensor_value"
@@ -243,6 +252,10 @@ class DPCode(StrEnum):
     PM25_VALUE = "pm25_value"
     POWDER_SET = "powder_set"  # Powder
     POWER = "power"
+    POWER_A = "power_a"
+    POWER_B = "power_b"
+    POWER_FACTOR = "power_factor"
+    POWER_FACTOR_B = "power_factor_b"
     POWER_GO = "power_go"
     PRESENCE_STATE = "presence_state"
     PRESSURE_STATE = "pressure_state"
@@ -258,6 +271,7 @@ class DPCode(StrEnum):
     RESET_FILTER = "reset_filter"
     RESET_MAP = "reset_map"
     RESET_ROLL_BRUSH = "reset_roll_brush"
+    REVERSE_ENERGY_TOTAL = "reverse_energy_total"
     ROLL_BRUSH = "roll_brush"
     SEEK = "seek"
     SENSITIVITY = "sensitivity"  # Sensitivity
@@ -341,6 +355,7 @@ class DPCode(StrEnum):
     TOTAL_FORWARD_ENERGY = "total_forward_energy"
     TOTAL_TIME = "total_time"
     TOTAL_PM = "total_pm"
+    TOTAL_POWER = "total_power"
     TVOC = "tvoc"
     UPPER_TEMP = "upper_temp"
     UPPER_TEMP_F = "upper_temp_f"
@@ -353,6 +368,7 @@ class DPCode(StrEnum):
     VOICE_SWITCH = "voice_switch"
     VOICE_TIMES = "voice_times"
     VOLUME_SET = "volume_set"
+    VOLTAGE_A = "voltage_a"
     WARM = "warm"  # Heat preservation
     WARM_TIME = "warm_time"  # Heat preservation time
     WATER = "water"
